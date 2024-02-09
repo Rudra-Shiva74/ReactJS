@@ -3,8 +3,8 @@ import React from 'react'
 export default function Register(props) {
     return (
         <div className='container d-flex justify-content-center'>
-            <div class="card" style={{ width: "40rem" }}>
-                <a href="" className='btn btn-primary'>SignUp via Google</a><br />
+            <div className="card" style={{ width: "40rem" }}>
+                <button onClick={props.loginGoogle} className='btn btn-primary'>SignUp via Google</button><br />
                 <a href="" className='btn btn-primary'>SignUp via facebook</a>
                 <br />
                 <form onSubmit={props.Register}>

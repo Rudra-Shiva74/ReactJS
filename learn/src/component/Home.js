@@ -166,8 +166,6 @@ export default function Home() {
     const FoundCity = async (e) => {
         e.preventDefault();
         await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3e5e9660aa9001aa6bfcbab023b951f4`).then((response) => {
-            // console.log(response);
-            // console.log()
             setData({
                 feel_like: response.data.main.feels_like,
                 min_temp: response.data.main.temp_min,

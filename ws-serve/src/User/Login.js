@@ -7,8 +7,8 @@ export default function Login(props) {
                 <a href="" className='btn btn-primary'>SignUp via Google</a><br />
                 <a href="" className='btn btn-primary'>SignUp via facebook</a><br />
                 <form onSubmit={props.Login}>
-                    <input type="email" placeholder='Enter Your Email' className='form-control' />
-                    <input type="password" placeholder='Enter Your Password' className='form-control' />
+                    <input type="email" placeholder='Enter Your Email' name="email" className='form-control' />
+                    <input type="password" placeholder='Enter Your Password' name='pass' className='form-control' />
                     <button type='submit' className='btn btn-primary'>Login</button>
                 </form>
             </div>
